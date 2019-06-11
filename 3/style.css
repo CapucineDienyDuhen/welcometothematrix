@@ -49,7 +49,7 @@ a:hover {
 
 /* Mis en forme de la baseline */
 #baseline{
-  background-color: #41A3C0;
+  background-image: url(https://cdn.pixabay.com/photo/2014/12/24/05/02/drops-of-water-578897_960_720.jpg);
   text-align: center;
   background-size: cover;
   padding: 150px;
@@ -58,19 +58,46 @@ a:hover {
 }
 
 #baseline h1 {
-  color: white;
+  color: blue;
   font-size: 50px;
+  font-style: italic;
+  text-decoration: overline underline;
 }
 
 #baseline a {
   color: white;
   font-size: 30px;
   font-weight: lighter;
-  text-decoration: none;
+  text-decoration: underline overline;
 }
 
  .feature {border: 7px solid #FF33FC;margin: 15px;padding: 15px 0;text-align: center;width: 400px; background: #33FDFF;}
 
-  #apropos{border: 7px solid #FF33FC;margin: 0 auto;width: 80%;background: #33FDFF;}
+  #apropos{border: 7px solid #FF33FC;margin: 0 auto;width: 80%;
+    background-image: url("sable.jpg");
+    display:flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
+nav li {
+  margin: 10px;
+  display:inline;
+}
+nav ul {
+  float: left;
+  margin-top: 25px;
+}
 
+#logo{
+  color: #fff;
+  font-size: 35px;
+  font-family: 'Pacifico', cursive;
+  float: left;
+  margin-left: 50px;
+}
+
+#baseline a:hover {
+  position: relative;
+  top:3px;
+}
