@@ -1,6 +1,13 @@
 
 
 $( document ).ready(function() {
-alert("Bienvenue");
-  $("p").addClass('red');
+
+	$( "p" ).on( "click", function() {
+
+		if ($( this ).hasClass('red')){
+			$( this ).removeClass('red');
+		}else{
+			$( this ).addClass('red');
+		}
+	});
 });
